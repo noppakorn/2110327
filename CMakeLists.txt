@@ -3,3 +3,6 @@ project(2110327 VERSION 0.1.0)
 
 add_executable(scratch_pad src/scratch_pad.cpp)
 add_executable(smp src/inclass/stable_marriage/smp.cpp)
+add_executable(consecutive_ones_c src/grader/ex00e5/consecutive_ones.cpp)
+add_executable(consecutive_ones_cpp src/grader/ex00e5/consecutive_ones.cpp)
+
