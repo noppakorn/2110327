@@ -1,20 +1,22 @@
 #include <stdio.h>
-int n, k, v[20];
-void r(int l, int c, int f) {
-    if (l == n) {
-        if (f) {
-            for (int i = 0; i < n; ++i)
-                printf("%d", v[i]);
-            printf("\n");
-        }
-        return;
+int n, k;
+char s[20];
+
+void recur(int len, int c, int done, char s[20]) {
+    if (c == k)
+        done = 1;
+    if (len == n) {
+        if (done)
+            printf("%s\n", s);
+    } else {
+        s[len] = '0';
+        recur(len + 1, 0, done, s);
+        s[len] = '1';
+        recur(len + 1, c + 1, done, s);
     }
-    v[l] = 0;
-    r(l + 1, 0, f);
-    v[l] = 1;
-    r(l + 1, c + 1, c + 1 >= k || f);
 }
+
 int main() {
     scanf("%d%d", &n, &k);
-    r(0, 0, 0);
+    recur(0, 0, 0, s);
 }

@@ -1,9 +1,12 @@
 def gen(n, sol, len, sum, k)
   if (len < n)
-    sol += "0"
-    gen(n, sol, len + 1, sum, k)
-    sol[len] = "1"
-    gen(n, sol, len + 1, sum + 1, k)
+    if (sum <= k)
+      sol += "0"
+      gen(n, sol, len + 1, sum, k)
+      sol[len] = "1"
+      gen(n, sol, len + 1, sum + 1, k)
+    end
+    return
   else
     if (sum == k)
       puts sol
