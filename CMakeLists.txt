@@ -7,4 +7,8 @@ add_executable(consecutive_ones_c src/grader/ex00e5/consecutive_ones.c)
 add_executable(consecutive_ones_cpp src/grader/ex00e5/consecutive_ones.cpp)
 
 add_executable(gen_barcode src/grader/ex00e4/gen_barcode.cpp)
+add_executable(larger_restaurant src/grader/ex01m3/larger_restaurant.cpp)
+add_executable(inversion src/grader/ex01m2/inversion.cpp)
+add_executable(a60b_mid_p4_merge src/grader/a60b_mid_p4_merge/merge.cpp)
+add_executable(tiling src/grader/ex01m1/tiling.cpp)
 
