@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-std::unordered_map<long long, long long> ttq;
 
 long long time_to_queue(long long time, vector<int> &chef) {
     long long ret = 0;
