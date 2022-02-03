@@ -11,4 +11,5 @@ add_executable(larger_restaurant src/grader/ex01m3/larger_restaurant.cpp)
 add_executable(inversion src/grader/ex01m2/inversion.cpp)
 add_executable(a60b_mid_p4_merge src/grader/a60b_mid_p4_merge/merge.cpp)
 add_executable(tiling src/grader/ex01m1/tiling.cpp)
+add_executable(modulo_exponent src/grader/ex01e4/modulo_exponent.cpp)
 
