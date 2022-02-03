@@ -12,4 +12,6 @@ add_executable(inversion src/grader/ex01m2/inversion.cpp)
 add_executable(a60b_mid_p4_merge src/grader/a60b_mid_p4_merge/merge.cpp)
 add_executable(tiling src/grader/ex01m1/tiling.cpp)
 add_executable(modulo_exponent src/grader/ex01e4/modulo_exponent.cpp)
-
+add_executable(mss src/grader/ex01e2/mss.cpp)
+add_executable(virus src/grader/a62_q2b_virus/virus.cpp)
+add_executable(virus2 src/grader/a63_q1b_virus2/virus2.cpp)
