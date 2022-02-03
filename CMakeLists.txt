@@ -15,3 +15,7 @@ add_executable(modulo_exponent src/grader/ex01e4/modulo_exponent.cpp)
 add_executable(mss src/grader/ex01e2/mss.cpp)
 add_executable(virus src/grader/a62_q2b_virus/virus.cpp)
 add_executable(virus2 src/grader/a63_q1b_virus2/virus2.cpp)
+add_executable(recur_matrix src/grader/a62_q1a_recur/recur_matrix.cpp)
+
+add_executable(triple_sum src/grader/a58_q1b_triple/triple_sum.cpp)
+add_executable(similar_string src/grader/a59_midp3_similar/similar_string.cpp)
