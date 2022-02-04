@@ -19,3 +19,6 @@ add_executable(recur_matrix src/grader/a62_q1a_recur/recur_matrix.cpp)
 
 add_executable(triple_sum src/grader/a58_q1b_triple/triple_sum.cpp)
 add_executable(similar_string src/grader/a59_midp3_similar/similar_string.cpp)
+
+add_executable(hanamard src/grader/a58_m3_hanamard/hanamard.cpp)
+add_executable(thanos src/grader/a61_q1_thanos/thanos.cpp)
