@@ -22,3 +22,4 @@ add_executable(similar_string src/grader/a59_midp3_similar/similar_string.cpp)
 
 add_executable(hanamard src/grader/a58_m3_hanamard/hanamard.cpp)
 add_executable(thanos src/grader/a61_q1_thanos/thanos.cpp)
+add_executable(matrix_modulo src/grader/a60_q1_matmod/matrix_modulo.cpp)
