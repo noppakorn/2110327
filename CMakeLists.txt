@@ -31,3 +31,8 @@ add_executable(mcsw src/grader/a59_midp4_mcsw/a59_midp4_mcsw.cpp)
 
 add_executable(a60b_mid_p4_merge src/grader/a60b_mid_p4_merge/merge.cpp)
 add_executable(merge_sort_count src/grader/a60b_mid_p4_merge/merge_sort_count.cpp)
+add_executable(closest_pair src/grader/ex02h1/closest.cpp)
+add_executable(gaa src/grader/a57_m4_gaa/gaa.cpp)
+
+
+add_executable(number1 src/grader/a60_q1_number1/number1.cpp)
