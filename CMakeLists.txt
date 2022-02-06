@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(2110327 VERSION 0.1.0)
+add_compile_options(-Wall -Wshadow)
 
 add_executable(scratch_pad src/scratch_pad.cpp)
 add_executable(smp src/inclass/stable_marriage/smp.cpp)
@@ -9,7 +10,6 @@ add_executable(consecutive_ones_cpp src/grader/ex00e5/consecutive_ones.cpp)
 add_executable(gen_barcode src/grader/ex00e4/gen_barcode.cpp)
 add_executable(larger_restaurant src/grader/ex01m3/larger_restaurant.cpp)
 add_executable(inversion src/grader/ex01m2/inversion.cpp)
-add_executable(a60b_mid_p4_merge src/grader/a60b_mid_p4_merge/merge.cpp)
 add_executable(tiling src/grader/ex01m1/tiling.cpp)
 add_executable(modulo_exponent src/grader/ex01e4/modulo_exponent.cpp)
 add_executable(mss src/grader/ex01e2/mss.cpp)
@@ -23,3 +23,11 @@ add_executable(similar_string src/grader/a59_midp3_similar/similar_string.cpp)
 add_executable(hanamard src/grader/a58_m3_hanamard/hanamard.cpp)
 add_executable(thanos src/grader/a61_q1_thanos/thanos.cpp)
 add_executable(matrix_modulo src/grader/a60_q1_matmod/matrix_modulo.cpp)
+add_executable(pareto src/grader/a60b_q2_pareto/pareto.cpp)
+add_executable(mcsw src/grader/a59_midp4_mcsw/a59_midp4_mcsw.cpp)
+
+
+
+
+add_executable(a60b_mid_p4_merge src/grader/a60b_mid_p4_merge/merge.cpp)
+add_executable(merge_sort_count src/grader/a60b_mid_p4_merge/merge_sort_count.cpp)

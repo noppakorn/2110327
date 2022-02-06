@@ -1,24 +1,18 @@
-#include <bits/stdc++.h>
-#define ll long long
+#include <bits/stdc++.h> #define ll long long
 #define pii pair<int, int>
 using namespace std;
 
-int solve(int n, int k,int *v) {
-    if (k == 1 || n == 1) {
-        for (int i = 0; i < n; ++i) {
-            v[i] = i + 1;
-        }
-        return 1;
+void solve(int left, int right, vector<int> &v, int &m, int &elem) {
+    if (m >= 3 && (right - left) > 1) {
+        m -= 2;
+        int mid = (left + right) / 2;
+        solve(mid, right, v, m, elem);
+        solve(left, mid, v, m, elem);
     } else {
-        int mid = n/2;
-        int v1 = solve(mid, k-2, v);
-        int v2 = solve(n-mid, k-1-v1, v+mid);
-        for (int i = 0; i < mid; ++i) {
-            v[i] += n-mid;
+        for (int i = left; i < right; ++i) {
+            v[i] = ++elem;
         }
-        return v1 + v2 + 1;
     }
-
 }
 
 int main() {
@@ -28,12 +22,12 @@ int main() {
     cin >> n >> m;
     if (m % 2 == 0 || m > 2 * n - 1)
         cout << -1 << "\n";
-    else  {
-        int arr[n];
-        solve(n, m, arr);
-        for (int i = 0; i < n; ++i) {
-            cout << arr[i] << " ";
-        }
+    else {
+        int elem = 0;
+        vector<int> v(n);
+        solve(0, n, v, m, elem);
+        for (auto &x : v)
+            cout << x << " ";
         cout << "\n";
     }
 }
