@@ -6,7 +6,6 @@ add_executable(scratch_pad src/scratch_pad.cpp)
 add_executable(smp src/inclass/stable_marriage/smp.cpp)
 add_executable(consecutive_ones_c src/grader/ex00e5/consecutive_ones.c)
 add_executable(consecutive_ones_cpp src/grader/ex00e5/consecutive_ones.cpp)
-
 add_executable(gen_barcode src/grader/ex00e4/gen_barcode.cpp)
 add_executable(larger_restaurant src/grader/ex01m3/larger_restaurant.cpp)
 add_executable(inversion src/grader/ex01m2/inversion.cpp)
@@ -16,23 +15,17 @@ add_executable(mss src/grader/ex01e2/mss.cpp)
 add_executable(virus src/grader/a62_q2b_virus/virus.cpp)
 add_executable(virus2 src/grader/a63_q1b_virus2/virus2.cpp)
 add_executable(recur_matrix src/grader/a62_q1a_recur/recur_matrix.cpp)
-
 add_executable(triple_sum src/grader/a58_q1b_triple/triple_sum.cpp)
 add_executable(similar_string src/grader/a59_midp3_similar/similar_string.cpp)
-
 add_executable(hanamard src/grader/a58_m3_hanamard/hanamard.cpp)
 add_executable(thanos src/grader/a61_q1_thanos/thanos.cpp)
 add_executable(matrix_modulo src/grader/a60_q1_matmod/matrix_modulo.cpp)
 add_executable(pareto src/grader/a60b_q2_pareto/pareto.cpp)
 add_executable(mcsw src/grader/a59_midp4_mcsw/a59_midp4_mcsw.cpp)
-
-
-
-
 add_executable(a60b_mid_p4_merge src/grader/a60b_mid_p4_merge/merge.cpp)
 add_executable(merge_sort_count src/grader/a60b_mid_p4_merge/merge_sort_count.cpp)
 add_executable(closest_pair src/grader/ex02h1/closest.cpp)
 add_executable(gaa src/grader/a57_m4_gaa/gaa.cpp)
-
-
 add_executable(number1 src/grader/a60_q1_number1/number1.cpp)
+add_executable(self_describing src/grader/ex01h1/self_describing.cpp)
+add_executable(mcs2 src/grader/a57_m5_mcs2/mcs2.cpp)
