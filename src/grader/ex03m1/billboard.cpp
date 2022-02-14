@@ -4,7 +4,7 @@ using namespace std;
 int table[10001][10001];
 vector<int> v;
 int solve(int start, int stop) {
-    if (stop-1 < start) {
+    if (stop - 1 < start) {
         return 0;
     } else if (table[start][stop] != 0) {
         return table[start][stop];
