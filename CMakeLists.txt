@@ -49,3 +49,5 @@ add_executable(bigger_billboard src/grader/a60a_midp3_bigger/bigger_billboard.cp
 add_executable(lcs_text src/grader/a59_midp1_lcs/lcs_text.cpp)
 add_executable(knapsack_items src/grader/a60a_midp1_knapsack/knapsack_items.cpp)
 add_executable(rope src/grader/a60b_midp2_rope/rope.cpp)
+add_executable(dividing src/grader/a60b_midp3_divide/dividing.cpp)
+add_executable(jumping src/grader/a62_q1a_jumping/jumping.cpp)
