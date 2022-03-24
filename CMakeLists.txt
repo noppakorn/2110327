@@ -66,3 +66,8 @@ add_executable(drainage src/grader/a57_f3_drainage/drainage.cpp)
 add_executable(supply src/grader/a57_m4_supply/supply.cpp)
 add_executable(table_no_11 src/grader/a64_q2_table_no_11/table_no_11.cpp)
 add_executable(two_mcs src/grader/a64_q2_two_mcs/two_mcs.cpp)
+add_executable(detecting_cycle src/grader/graph/ex05m1/detecting_cycle.cpp)
+
+
+add_executable(shortest_path src/grader/graph/ex05e1/shortest_path.cpp)
+add_executable(catapult src/grader/graph/ex05e3/catapult.cpp)
