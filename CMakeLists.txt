@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(2110327 VERSION 0.1.0)
 add_compile_options(-Wall -Wshadow -D_GLIBCXX_DEBUG)
-j
 add_executable(scratch_pad src/scratch_pad.cpp)
 
 # Build targets for src/grader/dc&dp
