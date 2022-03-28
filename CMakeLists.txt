@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.0.0)
 project(2110327 VERSION 0.1.0)
 add_compile_options(-Wall -Wshadow -D_GLIBCXX_DEBUG)
 add_executable(scratch_pad src/scratch_pad.cpp)
+set(CMAKE_CXX_STANDARD 17)
 
 # Build targets for src/grader/dc&dp
 add_executable(smp src/inclass/stable_marriage/smp.cpp)
@@ -79,3 +80,4 @@ add_executable(perimeter src/grader/graph/a60b_q3_perimeter/perimeter.cpp)
 add_executable(line_graph src/grader/graph/a62_q2a_line_graph/line_graph.cpp)
 add_executable(pandemic src/grader/graph/a62_q2a_pandemic/pandemic.cpp)
 add_executable(columbia src/grader/graph/ex06e3/columbia.cpp)
+add_executable(shortest_with_negative src/grader/graph/ex06e2/shortest_with_negative.cpp)
