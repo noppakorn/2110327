@@ -15,8 +15,6 @@ int main() {
             cin >> v[i][j];
         }
     }
-    vector<vector<vector<tuple<int, int, int>>>> g(
-        r, vector<vector<tuple<int, int, int>>>(c));
     vector<pii> direction = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
     priority_queue<iii, vector<iii>, greater<iii>> q;
     vector<vector<int>> d(r, vector<int>(c, INT_MAX));
