@@ -17,4 +17,8 @@ int main() {
         v[a].emplace_back(b, c);
         v[b].emplace_back(a, c);
     }
+    for (int i = 0; i < q; ++i) {
+        int d;
+        cin >> d;
+    }
 }
