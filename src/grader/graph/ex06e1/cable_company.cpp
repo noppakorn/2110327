@@ -24,7 +24,7 @@ int main() {
     pq.emplace(0, 0);
     d[0] = 0;
     while (!pq.empty()) {
-        auto [weight, pos] = pq.top();
+        auto [weight, pos] = move(pq.top());
         pq.pop();
         in_mst[pos] = true;
         for (auto &[b, c] : v[pos]) {

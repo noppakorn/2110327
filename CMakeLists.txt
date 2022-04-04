@@ -84,6 +84,7 @@ add_executable(shortest_with_negative src/grader/graph/ex06e2/shortest_with_nega
 add_executable(farthest src/grader/graph/a61_q2_farthest/farthest.cpp)
 add_executable(hole src/grader/graph/a59_q3_hole/hole.cpp)
 add_executable(cable_company src/grader/graph/ex06e1/cable_company.cpp)
+add_executable(cable_company_kruskal src/grader/graph/ex06e1/cable_company_kruskal.cpp)
 add_executable(mass_relay src/grader/graph/ex06m1/mass_relay.cpp)
 add_executable(cycle_in_tree src/grader/graph/a59_q3_cycle/cycle_in_tree.cpp)
 add_executable(ikea src/grader/graph/a60b_q3_ikea/ikea.cpp)
