@@ -13,7 +13,7 @@ int find(int x) {
 
 void union_set(int a, int b) {
     int p1 = find(a), p2 = find(b);
-    if (p[p1] > p[p2]) {
+    if (p[p1] < p[p2]) {
         p[p1] += p[p2];
         p[p2] = p1;
     } else {
