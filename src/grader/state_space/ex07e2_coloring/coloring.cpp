@@ -1,45 +1,48 @@
 #include <bits/stdc++.h>
 using namespace std;
+int n, e;
+vector<vector<int>> v;
+vector<int> color;
 
-int n, e, mn;
-vector<vector<int>> graph;
-void solve(int vertex, vector<int> colors) {
-    vector<bool> free(n, true);
-    if (vertex == n) {
-        set<int> s;
-        for (auto &x : colors) {
-            s.insert(x);
-        }
-        mn = min(mn, (int)s.size());
-        return;
+bool solve(int m, int max_color) {
+    bool res = false;
+    if (m == n) {
+        return true;
     }
-
-    for (auto &x : graph[vertex]) {
-        if (colors[x] != -1) {
-            free[x] = false;
+    for (int i = 0; i < max_color; ++i) {
+        bool valid = true;
+        for (auto &x : v[m]) {
+            if (color[x] == i) {
+                valid = false;
+                break;
+            }
         }
-    }
-    for (int i = 0; i < n; ++i) {
-        if (free[i]) {
-            colors[vertex] = i;
-            solve(vertex + 1, colors);
+        if (valid) {
+            color[m] = i;
+            res |= solve(m + 1, max_color);
+            if (res) break;
+            color[m] = -1;
         }
     }
+    return res;
 }
 
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
     cin >> n >> e;
-    mn = n;
-    graph = vector<vector<int>>(n);
+    v = vector<vector<int>>(n);
+    color = vector<int>(n, -1);
     for (int i = 0; i < e; ++i) {
         int a, b;
         cin >> a >> b;
-        graph[a].emplace_back(b);
-        graph[b].emplace_back(a);
+        v[a].emplace_back(b);
+        v[b].emplace_back(a);
     }
-    vector<int> colors(n, -1);
-    solve(0, colors);
-    cout << mn << "\n";
+    for (int i = 0; i <= n; ++i) {
+        if (solve(0, i)) {
+            cout << i << "\n";
+            return 0;
+        }
+    }
 }
